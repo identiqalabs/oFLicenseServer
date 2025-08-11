@@ -1,0 +1,548 @@
+/* General App Styling */
+.App {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Login Page Styling */
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container div {
+  margin-bottom: 15px;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Dashboard Styling */
+.dashboard {
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  padding: 8px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.dashboard-content {
+  display: flex;
+  gap: 20px;
+}
+
+/* Create License Form Styling */
+.create-license-form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-license-form h3 {
+  margin-top: 0;
+}
+
+.create-license-form div {
+  margin-bottom: 15px;
+}
+
+.create-license-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create-license-form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.create-license-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-license-form button:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
+
+
+/* License List Styling */
+.license-list {
+  flex-grow: 1;
+}
+
+.license-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.license-list th, .license-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.license-list th {
+  background-color: #f2f2f2;
+}
+
+/* Sidebar and dashboard layout */
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7fa;
+}
+.sidebar {
+  width: 220px;
+  background: #1a2733;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 0 0 0;
+  min-height: 100vh;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+}
+.sidebar h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 30px 30px;
+  letter-spacing: 1px;
+}
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  width: 100%;
+}
+.sidebar nav ul li {
+  width: 100%;
+}
+.sidebar nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-left: 4px solid transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+.sidebar nav ul li a.active, .sidebar nav ul li a:focus, .sidebar nav ul li a:hover {
+  background: #223044;
+  border-left: 4px solid #2e8be6;
+  color: #2e8be6;
+}
+.logout-button {
+  margin: 0 0 0 30px;
+  padding: 8px 20px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  align-self: flex-start;
+}
+.logout-button:hover {
+  background: #b52a37;
+}
+.dashboard-main {
+  flex: 1;
+  padding: 40px 40px 40px 40px;
+  background: #f4f7fa;
+  min-height: 100vh;
+}
+.page-content {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 32px 24px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+/* Table styling for All Licenses */
+.license-list table {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+.license-list th, .license-list td {
+  border: none;
+  padding: 12px 16px;
+}
+.license-list th {
+  background: #f4f7fa;
+  color: #223044;
+  font-weight: 600;
+}
+.license-list tr:nth-child(even) {
+  background: #f9fbfd;
+}
+.license-list tr:hover {
+  background: #eaf3fb;
+}
+
+/* Google-like search bar */
+.search-bar-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+}
+.search-bar {
+  width: 320px;
+  padding: 10px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 24px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(60,64,67,.08);
+  transition: border 0.2s;
+}
+.search-bar:focus {
+  border: 1.5px solid #4285f4;
+}
+
+/* Table responsiveness */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.license-list table {
+  min-width: 900px;
+  width: 100%;
+}
+
+.license-key-box {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: #f4faff;
+  border: 1.5px solid #2196f3;
+  border-radius: 8px;
+  color: #222;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.07);
+}
+.license-key-box h4 {
+  margin: 0 0 10px 0;
+  color: #2196f3;
+  font-size: 1.2rem;
+}
+
+/* --- Enhanced Create License Form --- */
+.enhanced-form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(33,150,243,0.08);
+  padding: 32px 28px 28px 28px;
+  width: 340px;
+  margin-bottom: 24px;
+}
+.form-title {
+  font-size: 1.4rem;
+  color: #2196f3;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-input {
+  padding: 10px 14px;
+  border: 1.5px solid #e0e7ef;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f8fafc;
+  transition: border 0.2s;
+}
+.form-input:focus {
+  border: 1.5px solid #2196f3;
+  outline: none;
+  background: #fff;
+}
+.form-submit-btn {
+  background: linear-gradient(90deg, #2196f3 60%, #21cbf3 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.07);
+  transition: background 0.2s;
+}
+.form-submit-btn:hover {
+  background: linear-gradient(90deg, #1976d2 60%, #21cbf3 100%);
+}
+.form-error {
+  color: #e53935;
+  background: #fff3f3;
+  border-left: 4px solid #e53935;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 18px;
+  font-size: 1rem;
+}
+.form-success {
+  background: #e3f7ff;
+  border-left: 4px solid #2196f3;
+  color: #1976d2;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-top: 18px;
+  font-size: 1rem;
+}
+/* --- License Stats --- */
+.license-stats-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(33,150,243,0.08);
+  padding: 24px 32px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+.license-stats-title {
+  color: #21cbf3;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.license-stats-row {
+  display: flex;
+  gap: 24px;
+  font-size: 1.1rem;
+}
+.license-stats-label {
+  color: #2196f3;
+  font-weight: 500;
+}
+.license-stats-value {
+  color: #223044;
+  font-weight: 700;
+}
+
+/* --- Dark Theme --- */
+body, .App {
+  background: #232323 !important;
+  color: #e3e6eb !important;
+}
+
+.login-container {
+  background: #2b2b2b;
+  border: 1.5px solid #292929;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.18);
+}
+.login-container input {
+  background: #232323;
+  color: #e3e6eb;
+  border: 1.5px solid #444;
+  box-shadow: none;
+}
+.login-container input:focus {
+  border: 1.5px solid #21cbf3;
+  background: #232323;
+  color: #fff;
+}
+.login-container button {
+  background: #38424a;
+  color: #e3e6eb;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.login-container button:hover {
+  background: #21cbf3;
+  color: #232323;
+}
+.login-logo-img {
+  display: block;
+  margin: 0 auto 24px auto;
+  max-width: 220px;
+  filter: drop-shadow(0 2px 8px #21cbf3);
+  background: none;
+}
+
+.dashboard-layout {
+  background: #232323;
+}
+.sidebar {
+  background: #2b2b2b;
+  color: #e3e6eb;
+  border-right: 1.5px solid #292929;
+}
+.sidebar nav ul li a {
+  color: #e3e6eb;
+  border-left: 4px solid transparent;
+  background: none;
+}
+.sidebar nav ul li a.active, .sidebar nav ul li a:focus, .sidebar nav ul li a:hover {
+  background: #232323;
+  border-left: 4px solid #21cbf3;
+  color: #21cbf3;
+}
+.dashboard-main, .page-content {
+  background: #232323;
+  color: #232323;
+}
+.create-license-form, .enhanced-form, .license-stats-box {
+  background: #2b2b2b;
+  color: #e3e6eb;
+  border: 1.5px solid #292929;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.form-input {
+  background: #232323;
+  color: #e3e6eb;
+  border: 1.5px solid #444;
+  border-radius: 3px;
+  box-shadow: none;
+}
+.form-input:focus {
+  border: 1.5px solid #21cbf3;
+  background: #232323;
+  color: #fff;
+}
+.form-submit-btn {
+  background: #38424a;
+  color: #e3e6eb;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  box-shadow: none;
+  transition: background 0.2s;
+}
+.form-submit-btn:hover {
+  background: #21cbf3;
+  color: #232323;
+}
+.form-error {
+  background: #2e1a1a;
+  color: #ffb3b3;
+  border-left: 4px solid #e53935;
+}
+.form-success {
+  background: #1a2e2e;
+  color: #21cbf3;
+  border-left: 4px solid #2196f3;
+}
+.license-stats-box {
+  background: #2b2b2b;
+  color: #e3e6eb;
+  border: 1.5px solid #292929;
+}
+.license-stats-label {
+  color: #21cbf3;
+}
+.license-stats-value {
+  color: #e3e6eb;
+}
+.license-list table {
+  background: #2b2b2b;
+  color: #e3e6eb;
+}
+.license-list th {
+  background: #232323;
+  color: #21cbf3;
+}
+.license-list tr:nth-child(even) {
+  background: #232323;
+}
+.license-list tr:hover {
+  background: #292929;
+}
+.search-bar {
+  background: #232323;
+  color: #e3e6eb;
+  border: 1.5px solid #444;
+  border-radius: 3px;
+  box-shadow: none;
+}
+.search-bar:focus {
+  border: 1.5px solid #21cbf3;
+  background: #232323;
+  color: #fff;
+}
